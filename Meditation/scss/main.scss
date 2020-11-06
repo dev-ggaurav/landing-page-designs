@@ -1,0 +1,60 @@
+@import "variables";
+@import "globals";
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 12000px;
+    padding: 3rem;
+
+    & .logo{
+        font-size: 2.6rem;
+    }
+
+    & span{
+        color: $blue;
+    }
+}
+
+main{
+    padding: 3rem;
+    text-align: center;
+
+    & h1{
+        font-size: 3.8rem;
+        margin: 2rem 0;
+        font-family: Ramaraja,serif;
+        line-height: 1;
+        color: $dark-blue;
+    }
+
+    & p{
+        font-size: 1.6rem;
+        margin: 1rem 0;
+        line-height: 1.5;
+        font-family: Roboto,sans-serif;
+        color: $light-grey;
+    }
+
+    & .cta-1{
+        margin: 3rem 0;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+
+        & *{
+            flex: 1;
+        }
+
+        & .main-content{
+            padding-right: 5rem;
+            text-align: left;
+        }
+    }
+  }

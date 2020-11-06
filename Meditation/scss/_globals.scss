@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: Montserrat,sans-serif;
+}
+
+body{
+    max-width: 1000px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #E6F3F9;
+}
+
+img{
+    width: 100%;
+    max-width: 40rem;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: Roboto;
+}
+
+.cta-1{
+    padding:1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: $blue;
+    color: #ffffff;
+    margin-left:2rem;
+    box-shadow:0 0px 80px rgba(0, 0, 0, 0.17);
+}
+
+.cta-2{
+    border: none;
+    background-color: transparent;
+    color: $dark-blue;
+    margin-right: 2rem;
+}
+
