@@ -1,0 +1,181 @@
+@import "globals";
+@import "variables";
+@import "components";
+
+body{
+    text-align: center;
+    padding: 2rem;
+    background-color: $background;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header{
+    & .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    & .nav-menu{
+        display: none;
+    }
+
+    & .hamburger{
+        cursor: pointer;
+    }
+
+    & .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #010101
+    }
+
+    & .logo{
+        font-size: 3.2rem;
+        font-weight: 600;
+        font-family: $heading-font;
+        color: $primary-color;
+
+        & span{
+            color: $accent-color;
+        }
+    }
+}
+
+
+.hero{
+    text-align: center;
+    margin: 3rem 0;
+
+    & .hero-content{
+        max-width: 50%;
+    }
+    
+    & h1{
+        font-size: 3.2rem;
+        margin: 1rem 0;
+    }
+
+    & p{
+        font-size: 1.6rem;
+        font-family: $body-font;
+    }
+}
+
+
+.features{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    justify-items: center;
+
+    & i{
+        font-size: 3.4rem;
+        margin-bottom: 1rem;
+        color: $primary-color;
+    }
+}
+
+
+.about{
+    margin: 3rem 0;
+    padding: 3rem 2rem;
+
+    & .about-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    & h2{
+        font-size: 2.8rem;
+        font-family: $heading-font;
+        color: $primary-color;
+    }
+
+    & .points{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+}
+
+.pricing{
+    h2{
+        font-size: 2.8rem;
+    }
+}
+
+.pricing-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    & h2{
+        font-size: 2.1rem;
+    }
+
+    & .fa-building{
+        font-size: 3.6rem;
+        color: $accent-color;
+    }
+}
+
+.global-network{
+    h1{
+       font-size:3.2rem; 
+    }
+}
+
+.brands-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+
+    & img{
+        width: 3rem;
+    }
+}
+
+.newsletter{
+    margin: 5rem 0;
+
+    & input{
+        padding: 0.8rem 1rem;
+        border: 1px solid $primary-color;
+        border-radius: 5rem;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    & button{
+        margin:1rem 0;
+    }
+}
+
+
+.footer{
+    & .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    & i{
+        font-size: 2.1rem;
+        margin: 0 2rem;
+        color: $accent-color;
+    }
+}
+
+
+@import "mediaqueries";
+
+
