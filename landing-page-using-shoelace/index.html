@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page using Shoelace</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.22/dist/shoelace/shoelace.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.22/dist/shoelace/shoelace.esm.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <h2 class="logo">Logo</h2>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <sl-button type="primary">Sign In</sl-button>
+                </li>
+                <li class="nav-item">
+                    <sl-button type="default">Sign Up</sl-button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="section-content">
+            <h2>You’re never paying full price for software again.</h2>
+            <p>We’ll send you the hottest deals straight to your inbox so you’re always in on the best-kept software secrets.</p>
+            <div class="form">
+                <sl-form class="input-validation-type">
+                    <sl-input class="input" type="email" label="Email" placeholder="you@example.com" required></sl-input>
+                    <sl-button type="primary" submit class="submit-btn">Submit</sl-button>
+                </sl-form>
+            </div>
+        </div>
+        <img src="/finance_analytics__monochromatic.svg" alt="" class="hero-img">
+    </section>
+
+    <section class="features">
+        <sl-card class="card-overview">
+            <img 
+              slot="image" 
+              src="/order_confirmed_two_color.svg" 
+              alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+            >
+          
+            <strong>Mittens</strong><br>
+            This kitten is as cute as he is playful. Bring him home today!<br>
+          
+          </sl-card>
+        <sl-card class="card-overview">
+            <img 
+              slot="image" 
+              src="/online_payment__two_color.svg" 
+              alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+            >
+          
+            <strong>Mittens</strong><br>
+            This kitten is as cute as he is playful. Bring him home today!<br>
+          
+          </sl-card>
+        <sl-card class="card-overview">
+            <img 
+              slot="image" 
+              src="/online_payment_two_color.svg" 
+              alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+            >
+          
+            <strong>Mittens</strong><br>
+            This kitten is as cute as he is playful. Bring him home today!<br>
+          
+          </sl-card>
+        <sl-card class="card-overview">
+            <img 
+              slot="image" 
+              src="/order_confirmed_two_color.svg" 
+              alt="A kitten sits patiently between a terracotta pot and decorative grasses."
+            >
+          
+            <strong>Mittens</strong><br>
+            This kitten is as cute as he is playful. Bring him home today!<br>
+          </sl-card>
+    </section>
+
+    <section class="faqs-container">
+        <img src="/customer_service.svg" alt="">
+        <div class="faqs">
+            <sl-details summary="Toggle Me">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </sl-details>
+            <sl-details summary="Toggle Me">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </sl-details>
+            <sl-details summary="Toggle Me">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </sl-details>
+            <sl-details summary="Toggle Me">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </sl-details>
+            <sl-details summary="Toggle Me">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </sl-details>
+        </div>
+    </section>
+
+    <section class="contact">
+        <sl-form class="input-validation-required">
+            <sl-input name="name" label="Name" required></sl-input>
+            <br>
+            <sl-input type="email" name="email" label="Email" required></sl-input>
+            <br>
+            <sl-textarea name="comment" label="Comment" required></sl-textarea>
+            <br>
+            <sl-button type="primary" submit>Submit</sl-button>
+          </sl-form>
+    </section>
+</body>
+</html>

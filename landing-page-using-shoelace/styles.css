@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sl-color-primary-hue: 49;
+    --sl-color-primary-saturation: 100%;
+    --sl-color-primary-text: var(--sl-color-black);
+  }
+
+html{
+    font-family: sans-serif;
+}
+
+body{
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #17162A;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+section{
+    margin: 5rem 0;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    margin-left: 1.5rem;
+}
+
+.hero{
+    text-align: center;
+}
+
+.hero-img{
+    margin: 2rem 0;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.card-overview{
+    text-align: center;
+    color: var(--sl-color-black);
+}
+
+
+.input{
+    margin:1.5rem 0;
+    max-width: 30rem;
+}
+
+sl-details{
+    margin: 1rem 0;
+}
+
+@media only screen and (min-width: 500px) {
+
+    .features{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero{
+        text-align: left;
+    }
+
+  }
+
+
+@media only screen and (min-width: 768px) {
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .hero-img{
+        margin:0;
+    }
+
+    .features{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .faqs-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faqs-container img{
+        width: 100%;
+        max-width: 30rem;
+    }
+  }
